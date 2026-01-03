@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Noisee - Personal/CV/Resume HTML Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Noisee - Personal/CV/Resume HTML Template</span>
+	</header>	
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li><a href="#settings" class="dt-navbar__link">Settings</a></li>
+						<li><a href="#include_fonts" class="dt-navbar__link">Fonts</a></li>
+						<li><a href="#conts" class="dt-navbar__link">Contact Form PHP</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_started" class="dt-navbar__link dt-navbar__link_nested">"Started" section</a></li>
+								<li><a href="#html_structure_about" class="dt-navbar__link dt-navbar__link_nested">"About" section</a></li>
+								<li><a href="#html_structure_service" class="dt-navbar__link dt-navbar__link_nested">"Service" section</a></li>
+								<li><a href="#html_structure_portfolio" class="dt-navbar__link dt-navbar__link_nested">"Portfolio" section</a></li>
+								<li><a href="#html_structure_quotes" class="dt-navbar__link dt-navbar__link_nested">"Quotes" section</a></li>
+								<li><a href="#html_structure_contacts" class="dt-navbar__link dt-navbar__link_nested">"Contacts" section</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>		
+			</nav>
+		</aside>	
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Noisee - Personal/CV/Resume HTML Template</h2>
+				<p>By:Olexandr Beshley</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleygame@mail.ru">beshleygame@mail.ru</a></p>
+			</div>		
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│ 
+├──doc/
+├──template_colors/		
+│──│──blue(yellow, green, pink, purple, red)/
+│──│──│──css/
+│──│──│──│──animate.css
+│──│──│──│──basic.css
+│──│──│──│──layout.css
+│──│──│──│──ionicons.css
+│──│──│──│──magnific-popup.css
+│──│──│──fonts/
+│──│──│──images/
+│──│──│──js/
+│──│──│──│──main.js
+│──│──│──│──imagesloaded.pkgd.js
+│──│──│──│──jquery.min.js
+│──│──│──│──jquery.validate.js
+│──│──│──│──magnific-popup.js
+│──│──│──│──masonry.pkgd.js
+│──│──│──│──jquery.mb.YTPlayer.js
+│──│──│──│──grained.js
+│──│──│──│──jquery.hover3d.js
+│──│──│──│──particles.js
+│──│──│──│──particles-setting.js
+│──│──│──│──scrollreveal.js
+│──│──│──less/
+│──│──│──│──basic.less
+│──│──│──│──layout.less
+│──│──│──│──setting.less
+│──│──│──index.html
+│──│──│──index-particles.html
+│──│──│──index-video.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css</span> - all CSS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">animate.css</span> - CSS for animations</li>
+							<li><span class="dt-label dt-label_bold">ionicons.css</span> - CSS for "ionicons" icons</li>
+							<li><span class="dt-label dt-label_bold">magnific-popup.css</span> - CSS for "Magnific Popup" plugin</li>
+							<li><span class="dt-label dt-label_bold">basic.css</span> - CSS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.css</span> - CSS for template layout</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">less</span> - all LESS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">setting.less</span> - LESS for setting template</li>
+							<li><span class="dt-label dt-label_bold">basic.less</span> - LESS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.less</span> - LESS for template layout</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js</span> - all JS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">main.js</span> - Main JS for template</li>
+							<li><span class="dt-label dt-label_bold">imagesloaded.pkgd.js</span> - JS plugin for masonry</li>
+							<li><span class="dt-label dt-label_bold">jquery.min.js</span> - jQuery library</li>
+							<li><span class="dt-label dt-label_bold">jquery.validate.js</span> - JS plugin for validate forms</li>
+							<li><span class="dt-label dt-label_bold">magnific-popup.js</span> - JS plugin for popups</li>
+							<li><span class="dt-label dt-label_bold">masonry.pkgd.js</span> - Masonry plugin for: "Portfolio" items</li>
+							<li><span class="dt-label dt-label_bold">grained.js</span> - Plugin for noise background effects</li>
+							<li><span class="dt-label dt-label_bold">jquery.mb.YTPlayer.js</span> - Plugin for Youtube Video Background</li>
+							<li><span class="dt-label dt-label_bold">jquery.hover3d.js</span> - 3D Hover Plugin</li>
+							<li><span class="dt-label dt-label_bold">particles.js</span> - Plugin for Particles Background</li>
+							<li><span class="dt-label dt-label_bold">particles-setting.js</span> - Plugin for setting Particles</li>
+							<li><span class="dt-label dt-label_bold">scrollreveal.js</span> - Plugin for animate blocks on scroll</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>
+					For editing the template you can use following settings, folder "/less/setting.less" .
+				</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors setting for template elements</span></td>
+						</tr>
+						<tr>
+							<td>@default-color</td>
+							<td>#868686</td>
+							<td>Default color</td>
+						</tr>
+						<tr>
+							<td>@extra-color</td>
+							<td>#969696</td>
+							<td>Extra color</td>
+						</tr>
+						<tr>
+							<td>@dark-color</td>
+							<td>#262626</td>
+							<td>Dark color</td>
+						</tr>
+						<tr>
+							<td>@light-color</td>
+							<td>#f6f6f6</td>
+							<td>Light color</td>
+						</tr>
+						<tr>
+							<td>@white-color</td>
+							<td>#fff</td>
+							<td>White color</td>
+						</tr>
+						<tr>
+							<td>@extra-white-color</td>
+							<td>#fff</td>
+							<td>Extra White color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#304fff</td>
+							<td>template color</td>
+						</tr>
+						<tr>
+							<td>@error-color</td>
+							<td>red</td>
+							<td>Error field color</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Fonts setting for template</span></td>
+						</tr>
+						<tr>
+							<td>@default-font</td>
+							<td>'Hind'</td>
+							<td>Default font for template</td>
+						</tr>
+						<tr>
+							<td>@extra-font</td>
+							<td>'Source Sans Pro'</td>
+							<td>Extra font for template</td>
+						</tr>
+						<tr>
+							<td>@icons-font</td>
+							<td>'Ionicons'</td>
+							<td>Icons font for template</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Sizes setting for template</span></td>
+						</tr>
+						<tr>
+							<td>@large-size</td>
+							<td>18px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>@default-size</td>
+							<td>16px</td>
+							<td>Default Size</td>
+						</tr>
+						<tr>
+							<td>@small-size</td>
+							<td>14px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>@extra-small-size</td>
+							<td>12px</td>
+							<td>Extra Small Size</td>
+						</tr>
+						<tr>
+							<td>@title-size</td>
+							<td>36px</td>
+							<td>Title Size</td>
+						</tr>
+						<tr>
+							<td>@subtitle-size</td>
+							<td>16px</td>
+							<td>Subtitle Size</td>
+						</tr>
+						<tr>
+							<td>@h1-size</td>
+							<td>40px</td>
+							<td>H1 Size</td>
+						</tr>
+						<tr>
+							<td>@h2-size</td>
+							<td>36px</td>
+							<td>H2 Size</td>
+						</tr>
+						<tr>
+							<td>@h3-size</td>
+							<td>32px</td>
+							<td>H3 Size</td>
+						</tr>
+						<tr>
+							<td>@h4-size</td>
+							<td>28px</td>
+							<td>H4 Size</td>
+						</tr>
+						<tr>
+							<td>@h5-size</td>
+							<td>24px</td>
+							<td>H5 Size</td>
+						</tr>
+						<tr>
+							<td>@h6-size</td>
+							<td>19px</td>
+							<td>H6 Size</td>
+						</tr>
+						<tr>
+							<td>@default-icon-size</td>
+							<td>20px</td>
+							<td>Default icons size</td>
+						</tr>
+						<tr>
+							<td>@extra-icon-size</td>
+							<td>16px</td>
+							<td>Extra icons size</td>
+						</tr>
+						<tr>
+							<td>@default-letter-spacing</td>
+							<td>0.015em</td>
+							<td>Default Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@extra-letter-spacing</td>
+							<td>0.03em</td>
+							<td>Extra Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@line-height</td>
+							<td>28px</td>
+							<td>Default Line-height for text</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors template</span></td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#304fff</td>
+							<td>Blue template color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#689f38</td>
+							<td>Green template color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ffe164</td>
+							<td>Yellow template color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ff4181</td>
+							<td>Pink template color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#9C27B0</td>
+							<td>Purple template color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ed3b3b</td>
+							<td>Red template color</td>
+						</tr>
+					</tbody>
+				</table>				
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet"&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet"&gt;
+					</code>
+				</pre>	
+				<p>
+					Next step is to set the @default-font and @extra-font option with using settings table.
+				</p>				
+			</article>
+			<article id="conts" class="dt-section">
+				<h2 class="dt-title">Contact Form PHP</h2>
+				<p>To modify the form is submitted, you can use the following settings, folders "/mailer/form_setting.php" and "/mailer/feedback.php"</p>				
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	
+	&lt;!-- Basic --&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+	&lt;title&gt;mCard - Material vCard/CV/Resume HTML Template&lt;/title&gt;
+	&lt;meta name="description" content=""&gt;
+	&lt;meta name="keywords" content=""&gt;
+	
+	&lt;!-- Mobile Specific Metas --&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;
+	
+	&lt;!-- Load Fonts --&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet"&gt;
+	
+	&lt;!-- CSS --&gt;
+	&lt;link rel="stylesheet" href="css/basic.css" /&gt;
+	&lt;link rel="stylesheet" href="css/layout.css" /&gt;
+	&lt;link rel="stylesheet" href="css/ionicons.css" /&gt;
+	&lt;link rel="stylesheet" href="css/owl.carousel.css" /&gt;
+	&lt;link rel="stylesheet" href="css/magnific-popup.css" /&gt;
+	&lt;link rel="stylesheet" href="css/animate.css" /&gt;
+	
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+	&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Favicon --&gt;
+	&lt;link rel="shortcut icon" href="images/favicons/favicon.ico"&gt;
+	
+&lt;/head&gt;
+
+&lt;body&gt;
+	
+	&lt;!-- Page --&gt;
+	&lt;div class="page" id="home-section"&gt;
+
+		&lt;!-- Preloader --&gt;
+		&lt;div class="preloader"&gt;
+			&lt;div class="centrize full-width"&gt;
+				&lt;div class="vertical-center"&gt;
+					&lt;div class="spinner"&gt;
+						&lt;div class="double-bounce1"&gt;&lt;/div&gt;
+						&lt;div class="double-bounce2"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Started Background --&gt;
+		&lt;div class="started-bg"&gt;
+			&lt;div id="particles-bg" class="slide" style="background-image: url(images/particles-bg.jpg);"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Header --&gt;
+		&lt;header&gt;
+			&lt;div class="top-menu"&gt;
+				&lt;ul&gt;
+					&lt;li class="active"&gt;
+						&lt;a class="btn_animated" href="#home-section"&gt;&lt;span class="circle"&gt;Home&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#about-section"&gt;&lt;span class="circle"&gt;About&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#skills-section"&gt;&lt;span class="circle"&gt;Skills&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#experience-section"&gt;&lt;span class="circle"&gt;Experience&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#service-section"&gt;&lt;span class="circle"&gt;Services&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#education-section"&gt;&lt;span class="circle"&gt;Education&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#works-section"&gt;&lt;span class="circle"&gt;Portfolio&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#clients-section"&gt;&lt;span class="circle"&gt;Clients&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#pricing-section"&gt;&lt;span class="circle"&gt;Pricing&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#blog-section"&gt;&lt;span class="circle"&gt;Blog&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#contact-section"&gt;&lt;span class="circle"&gt;Contact Me&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;a href="#" class="menu-btn"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/header&gt;
+		
+		&lt;!-- Container --&gt;
+		&lt;div class="container"&gt;
+
+			&lt;!-- Wrapper --&gt;
+			&lt;div class="wrapper"&gt;
+				
+			&lt;/div&gt;
+
+			&lt;!-- Footer --&gt;
+			&lt;footer&gt;
+				&lt;div class="copy"&gt;© 2016 mCard. All rights reserved.&lt;/div&gt;
+			&lt;/footer&gt;
+			
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+	
+	&lt;!-- jQuery Scripts --&gt;
+    &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.validate.js"&gt;&lt;/script&gt;
+	&lt;script src="js/magnific-popup.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry-filter.js"&gt;&lt;/script&gt;
+	&lt;script src="js/scrollreveal.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.mb.YTPlayer.js"&gt;&lt;/script&gt;
+	&lt;script src="js/particles.js"&gt;&lt;/script&gt;
+	&lt;script src="js/particles-setting.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Google map api --&gt;
+	&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;
+	
+	&lt;!-- Main Scripts --&gt;
+	&lt;script src="js/main.js"&gt;&lt;/script&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_started" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Started" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Started --&gt;
+&lt;div class="section started"&gt;
+	&lt;div id="particles-bg" class="slide" style="background-image: url(images/slide-bg-1.jpg);"&gt;&lt;/div&gt;
+	&lt;div class="st-box align-center"&gt;
+		&lt;div class="st-title"&gt;Hi, I'm John Brodie&lt;/div&gt;
+		&lt;div class="st-subtitle"&gt;ux/ui designer & front-end developer&lt;/div&gt;
+		&lt;div class="st-soc"&gt;
+			&lt;a target="blank" href="https://www.facebook.com"&gt;&lt;i class="icon ion ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a target="blank" href="https://github.com"&gt;&lt;i class="icon ion ion-social-github"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a target="blank" href="https://twitter.com"&gt;&lt;i class="icon ion ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a target="blank" href="https://www.youtube.com"&gt;&lt;i class="icon ion ion-social-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a target="blank" href="https://plus.google.com"&gt;&lt;i class="icon ion ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_about" class="dt-section">
+				<h2 class="dt-title">HTML structure of "About" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section About --&gt;
+&lt;div class="section about" id="about-section"&gt;
+	&lt;div class="fw"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+				&lt;div class="profile-image image-3d"&gt;
+					&lt;div class="image-3d-card"&gt;
+						&lt;img src="images/man.jpg" alt="" /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+				&lt;div class="text-box"&gt;
+					&lt;h2&gt;let me introduce myself&lt;span class="point"&gt;&lt;/span&gt;&lt;/h2&gt;
+					&lt;p&gt;
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed ut perspiciatis unde omnis iste natus error.
+					&lt;/p&gt;
+					&lt;p&gt;
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+					&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="bts animated"&gt;
+					&lt;a href="#" class="btn"&gt;&lt;i class="icon ion ion-android-download"&gt;&lt;/i&gt;Download Resume&lt;/a&gt;
+					&lt;a href="#" class="btn extra"&gt;Hire Me&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_service" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Service" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Service --&gt;
+&lt;div class="section service" id="service-section"&gt;
+	&lt;div class="fw"&gt;
+		&lt;div class="titles align-left animated"&gt;
+			&lt;div class="title"&gt;what i do&lt;span class="point"&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class="subtitle"&gt;ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col col-m-12 col-t-4 col-d-4 animated"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="name"&gt;ui/ux design&lt;/div&gt;
+					&lt;p&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			...
+		&lt;/div&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col col-m-12 col-t-4 col-d-4 animated"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="name"&gt;brand identity&lt;/div&gt;
+					&lt;p&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			...
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_portfolio" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Portfolio" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Portfolio --&gt;
+&lt;div class="section works" id="works-section"&gt;
+	&lt;div class="fw"&gt;
+		&lt;div class="titles align-left animated"&gt;
+			&lt;div class="title"&gt;recent works&lt;span class="point"&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class="subtitle"&gt;ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="row box-items"&gt;
+			&lt;div class="col col-m-12 col-t-6 col-d-6 box-item animated"&gt;
+				&lt;div class="image image-3d"&gt;
+					&lt;div class="image-3d-card"&gt;
+						&lt;a href="#popup-1" class="has-popup"&gt;&lt;img src="images/works/work1.jpg" alt="" /&gt;&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id="popup-1" class="popup-box mfp-fade mfp-hide"&gt;
+					&lt;div class="content"&gt;
+						&lt;div class="image"&gt;
+							&lt;img src="images/works/work1.jpg" alt=""&gt;
+						&lt;/div&gt;
+						&lt;div class="desc"&gt;
+							&lt;h4&gt;Realistic Business Cards MockUp&lt;/h4&gt;
+							&lt;p&gt;
+								Here’s a new b-cards mock-up with several business cards scattered across the scene. The PSD file allows you to easily. Here’s a new b-cards mock-up with several business cards scattered across the scene.
+							&lt;/p&gt;
+							&lt;a href="#" class="btn"&gt;View Project&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			...
+		&lt;/div&gt;
+		&lt;div class="bts align-center animated"&gt;
+			&lt;a href="#" class="btn"&gt;&lt;i class="icon ion ion-android-refresh"&gt;&lt;/i&gt;Load more&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_quotes" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Quotes" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Quotes --&gt;
+&lt;div class="section quotes" id="service-quotes"&gt;
+	&lt;div class="fw"&gt;
+		&lt;div class="q-titles align-center animated"&gt;
+			&lt;div class="subtitle"&gt;ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&lt;/div&gt;
+			&lt;div class="title"&gt;are you ready to start your project now?&lt;/div&gt;
+			&lt;div class="bts"&gt;
+				&lt;a href="#" class="btn"&gt;&lt;i class="icon ion ion-android-create"&gt;&lt;/i&gt;Get Quotes&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_contacts" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Contacts" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Contacts --&gt;
+&lt;div class="section contacts" id="contact-section"&gt;
+	&lt;div class="fw"&gt;
+		&lt;div class="titles align-left animated"&gt;
+			&lt;div class="title"&gt;contact me&lt;span class="point"&gt;&lt;/span&gt;&lt;/div&gt;
+			&lt;div class="subtitle"&gt;ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="contact-form"&gt;
+			&lt;form id="cform" method="post"&gt;
+				&lt;div class="row"&gt;
+					&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+						&lt;div class="value"&gt;
+							&lt;input type="text" name="name" placeholder="name *" /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+						&lt;div class="value"&gt;
+							&lt;input type="tel" name="tel" placeholder="phone *" /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+						&lt;div class="value"&gt;
+							&lt;input type="text" name="email" placeholder="email *" /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="col col-m-12 col-t-6 col-d-6 animated"&gt;
+						&lt;div class="value"&gt;
+							&lt;input type="text" name="subject" placeholder="subject *" /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="col col-m-12 col-t-12 col-d-12 animated"&gt;
+						&lt;div class="value"&gt;
+							&lt;textarea name="message" placeholder="message"&gt;&lt;/textarea&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="col col-m-12 col-t-12 col-d-12 animated"&gt;
+						&lt;a href="#" class="btn" onclick="$('#cform').submit(); return false;"&gt;&lt;i class="icon ion ion-android-send"&gt;&lt;/i&gt;Send Message&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+			&lt;div class="alert-success"&gt;
+				&lt;p&gt;Thanks, your message is sent successfully. We will contact you shortly!&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - http://ionicons.com/.
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Sourse & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Animate.css</span> <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Masonry</span> <a target="_blank" href="http://masonry.desandro.com/">http://masonry.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Grained.js</span> <a target="_blank" href="https://github.com/sarathsaleem/grained">https://github.com/sarathsaleem/grained</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jquery.mb.YTPlayer</span> <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Hover3d.js</span> <a target="_blank" href="https://github.com/ariona/hover3d">https://github.com/ariona/hover3d</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Particles.js</span> <a target="_blank" href="https://github.com/VincentGarreau/particles.js/">https://github.com/VincentGarreau/particles.js/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Scrollreveal</span> <a target="_blank" href="https://github.com/jlmakes/scrollreveal">https://github.com/jlmakes/scrollreveal</a>
+					</li>
+				</ul>
+				<h3>Fonts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Hind</span> <a target="_blank" href="https://fonts.google.com/specimen/Hind">https://fonts.google.com/specimen/Hind</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Source Sans Pro</span> <a target="_blank" href="https://fonts.google.com/specimen/Source+Sans+Pro">https://fonts.google.com/specimen/Source+Sans+Pro</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Ionicons</span> <a target="_blank" href="http://ionicons.com/">http://ionicons.com/</a>
+					</li>
+				</ul>
+				<h3>Images and Videos</h3>
+				<p>Any Images and Videos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Unsplash</span> <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Pexels</span> <a target="_blank" href="https://www.pexels.com/">https://www.pexels.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Graphicburger</span> <a target="_blank" href="http://graphicburger.com/">http://graphicburger.com/</a>
+					</li>
+				</ul>
+			</article>		
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>
